@@ -7,7 +7,7 @@ class Database:
         conn.row_factory = sqlite3.Row
         return conn
 
-    def __init__(self, db_name='database.db'):
+    def __init__(self, db_name='data/database.db'):
         self.db_name = db_name
 
         connection = sqlite3.connect("database.db")
